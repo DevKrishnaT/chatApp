@@ -1,9 +1,13 @@
 import React from "react";
+import useChat from "../../context/useStartChating";
 
-const SidebarChat = ({ Name, Recent_Message }) => {
+const SidebarChat = ({ Name, Recent_Message , id }) => {
+  const { id, setId } = useChat();
+
+  
   return (
     <div className="px-4 py-4">
-      <div className="flex dark:hover:bg-[#1a23388a] hover:bg-[#eef1f4] items-center gap-4 rounded-xl px-2 py-2">
+      <div className="flex dark:hover:bg-[#1a23388a] hover:bg-[#eef1f4] items-center gap-4 rounded-xl px-2 py-2" onClick={}>
         <div className="dark:text-[#F8FAFC] text-[#0F172A] text-2xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"

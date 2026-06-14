@@ -15,6 +15,8 @@ const Contact = () => {
 
     setDark(document.documentElement.classList.contains("dark"));
   }, []);
+
+  
   return (
     <div className="h-screen w-full dark:bg-[#0B1220] border border-[#CBD5E1] dark:border-[#1E293B]">
       <div className="chat-area p-4 flex justify-between items-center border-b dark:border-b-[#1E293B] border-b-[#CBD5E1]">
@@ -49,7 +51,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 h-full">
-        <SidebarChat Name={"Krishna"} Recent_Message={"Abe kha ho"} />
+        <SidebarChat Name={"Krishna"} Recent_Message={"Abe kha ho"}  />
       </div>
     </div>
   );
